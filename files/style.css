@@ -10,3 +10,20 @@ License URI: https://opensource.org/licenses/MIT
 Text Domain: snet-theme
 Tags: 
 */
+
+#container {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tag-block {
+	margin-top: 8px;
+
+	font-size: 85%;
+}
+
+.post img {
+	max-width: 100%;
+	height: auto
+}

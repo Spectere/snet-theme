@@ -6,22 +6,28 @@
 
 	<body <?php body_class(); ?>>
 		<div id="container">
-			<?php get_sidebar(); ?>
+			<div class="row">
+				<div id="left-sidebar-pane" class="col-sm-4 col-md-3 col-lg-2">
+					<?php get_sidebar(); ?>
+				</div>
 
-			<div id="content">
-				<?php while(have_posts()) {
-					the_post();
-					get_template_part("content");
-				} ?>
-				<nav>
-					<div><?php next_posts_link("Older Entries"); ?></div>
-					<div><?php previous_posts_link("Newer Entries"); ?></div>
-				</nav>
+				<div id="content-pane" class="col-sm-8 col-md-9 col-lg-10">
+					<?php while(have_posts()) {
+						the_post();
+						get_template_part("content");
+					} ?>
+					<nav>
+						<div><?php next_posts_link("Older Entries"); ?></div>
+						<div><?php previous_posts_link("Newer Entries"); ?></div>
+					</nav>
+				</div>
 			</div>
 
-			<footer>
-				<?php get_footer(); ?>
-			</footer>
+			<div class="row">
+				<footer>
+					<?php get_footer(); ?>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
