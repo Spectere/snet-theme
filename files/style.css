@@ -16,19 +16,74 @@ body {
 	font-size: 16px;
 }
 
-#container {
+#container,
+#title-container {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6, .post-date {
+h1, h2, h3, h4, h5, h6,
+.post-date,
+#title-text-block,
+#subtitle-text-block {
 	font-family: Raleway, Verdana, Helvetica, sans-serif;
 	font-weight: 200;
 }
 
 h1 {
 	font-size: 40px;
+}
+
+#title-pane {
+	background-color: black;
+	color: white;
+
+	width: 100%;
+	float: left;
+
+	margin: 0;
+	padding: 0;
+}
+
+#title-text-block,
+#subtitle-text-block {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+
+#title-text-block,
+#title-text-block a,
+#title-text-block a:hover {
+	color: #fff;
+	text-decoration: none
+}
+
+#title-text-block {
+	margin-top: 10px;
+}
+
+#title-text-block {
+	font-size: 28px;
+}
+
+#subtitle-text-block {
+	font-size: 14px;
+	color: #ccf;
+	margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+	#title-text-block {
+		font-size: 40px;
+		margin-top: 20px;
+	}
+
+	#subtitle-text-block {
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
 }
 
 /*
