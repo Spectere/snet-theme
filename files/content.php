@@ -10,7 +10,7 @@
 			<?php the_date(); ?> at <?php the_time(); ?>
 		</div>
 	</header>
-	<div>
+	<div class="post-content">
 		<?php the_post_thumbnail();
 
 		if(is_single()) {
