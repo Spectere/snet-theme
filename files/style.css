@@ -116,7 +116,14 @@ table thead th {
 	background: #eee;
 }
 
+#comments-list .bypostauthor .comment-author {
+	margin: -8px -8px 8px -8px;
+	padding-top: 6px;
+	border-bottom: 1px solid #cce;
+	background: #cce;
+}
+
 #comments-list .comment.bypostauthor {
 	background: #eef;
-	border: 1px solid #dde;
+	border: 1px solid #cce;
 }
