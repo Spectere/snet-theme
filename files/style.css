@@ -31,7 +31,10 @@ h1 {
 	font-size: 40px;
 }
 
-.post img {
+.post div,
+.post img,
+.post-content div,
+.post-content img {
 	max-width: 100%;
 	height: auto
 }
