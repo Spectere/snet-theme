@@ -22,13 +22,15 @@
 
 		edit_post_link(); ?>
 	</div>
-	<footer>
-		<div>
-			<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default', 'Comments Disabled'); ?>
-		</div>
-	</footer>
+	<?php if(!is_single()) { ?>
+		<footer>
+			<div>
+				<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default', 'Comments Disabled'); ?>
+			</div>
+		</footer>
+	<?php }
 
-	<?php $tags = get_the_tags();
+	$tags = get_the_tags();
 	if(count($tags) > 0 && $tags != NULL) { ?>
 		<div class="tag-block">
 			<strong>Tags:</strong>

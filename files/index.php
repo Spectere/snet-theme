@@ -6,8 +6,9 @@
 		get_template_part("components/content");
 	} ?>
 	<nav>
-		<div><?php next_posts_link("Older Entries"); ?></div>
-		<div><?php previous_posts_link("Newer Entries"); ?></div>
+		<?php next_posts_link('&laquo; Older Entries'); ?>
+		|
+		<?php previous_posts_link('Newer Entries &raquo;'); ?>
 	</nav>
 </div>
 
