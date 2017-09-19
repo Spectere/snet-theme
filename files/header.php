@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo("charset"); ?>" />
-		<title><?php wp_title(); ?></title>
+		<title><?php bloginfo('name'); wp_title(); ?></title>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="pingback" href="<?php bloginfo("pingback_url"); ?>" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
