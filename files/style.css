@@ -52,6 +52,13 @@ h1 {
 }
 
 /*
+ * WordPress Components
+ */
+#search label {
+	width: 100%;
+}
+
+/*
  * HTML Elements
  */
 table {
