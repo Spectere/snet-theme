@@ -30,5 +30,6 @@
 		</footer>
 	<?php }
 
+	get_template_part('components/categories');
 	get_template_part('components/tags'); ?>
 </article>

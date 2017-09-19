@@ -15,6 +15,9 @@
 		the_content();
 		edit_post_link(); ?>
 	</div>
-	
-	<?php get_template_part('components/tags'); ?>
+
+	<?php
+		get_template_part('components/categories');
+		get_template_part('components/tags');
+	?>
 </article>
