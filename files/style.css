@@ -55,6 +55,26 @@ h1 {
 }
 
 /*
+ * Sidebar
+ */
+#sidebar h2 {
+	border-bottom: 1px dotted #ddd;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	list-style: none;
+}
+
+#sidebar ul li ul li {
+	margin: 2px 0 2px 16px;
+}
+
+/*
  * HTML Elements
  */
 table {
@@ -68,6 +88,24 @@ table td {
 
 table thead th {
 	border-bottom: 1px solid #ddd;
+}
+
+dl {
+	background-color: #ffffe9;
+	margin: 16px;
+	padding: 8px 16px;
+
+	border: 1px solid #dda;
+	border-radius: 8px;
+}
+
+dt {
+	border-bottom: 1px dotted #dda;
+	margin-top: 0.5em;
+}
+
+dd {
+	margin-bottom: 0.5em;
 }
 
 /*
