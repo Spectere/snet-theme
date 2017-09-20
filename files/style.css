@@ -89,6 +89,10 @@ h1 {
 /*
  * Sidebar
  */
+#left-sidebar-pane {
+	padding-bottom: 12px;
+}
+
 #sidebar h2 {
 	border-bottom: 1px dotted #ddd;
 }

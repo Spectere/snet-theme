@@ -26,6 +26,6 @@
 
 		<div id="container">
 			<div class="row">
-				<div id="left-sidebar-pane" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+				<nav id="left-sidebar-pane" class="navbar navbar-default col-xs-12 col-sm-4 col-md-3 col-lg-3">
 					<?php get_sidebar(); ?>
-				</div>
+				</nav>
