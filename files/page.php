@@ -3,15 +3,14 @@
 <div id="content-pane" class="col-sm-8 col-md-9 col-lg-9">
 	<?php while(have_posts()) {
 		the_post();
-		get_template_part('components/content', 'page'); ?>
+		get_template_part('components/content', 'page');
 
-		<nav>
-			<?php previous_post_link('%link', '&laquo; Previous Post'); ?>
-			|
-			<?php next_post_link('%link', 'Next Post &raquo;'); ?>
-		</nav>
+		the_post_navigation(array(
+			'prev_text' => '&laquo; Previous Post',
+			'next_text' => 'Next Post &raquo;'
+		));
 
-		<?php if(comments_open() || get_comments_number()) {
+		if(comments_open() || get_comments_number()) {
 			comments_template();
 		}
 	} ?>

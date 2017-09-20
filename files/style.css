@@ -118,6 +118,23 @@ h1 {
 }
 
 /*
+ * Post/Single
+ */
+.nav-previous,
+.nav-next {
+	display: inline;
+}
+
+.nav-previous {
+	margin-right: 8px;
+}
+
+.nav-previous:after {
+	margin-left: 8px;
+	content: '|';
+}
+
+/*
  * HTML Elements
  */
 table {

@@ -12,9 +12,14 @@
 	</header>
 	<div class="post-content">
 		<?php the_post_thumbnail();
-		the_content();
-		edit_post_link(); ?>
+		the_content(); ?>
 	</div>
+
+	<footer>
+		<div>
+			<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
+		</div>
+	</footer>
 
 	<?php
 		get_template_part('components/categories');
