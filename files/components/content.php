@@ -5,6 +5,10 @@
 			   title="Permanent link to <?php the_title_attribute(); ?>">
 			   	<?php the_title(); ?>
 			</a>
+
+			<div class="pull-right">
+				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
+			</div>
 		</h1>
 		<div class="post-date">
 			<?php the_date(); ?> at <?php the_time(); ?>
@@ -24,7 +28,6 @@
 		<footer>
 			<div>
 				<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default', 'Comments Disabled'); ?>
-				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
 			</div>
 		</footer>
 	<?php }

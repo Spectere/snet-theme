@@ -5,6 +5,10 @@
 			   title="Permanent link to <?php the_title_attribute(); ?>">
 			   	<?php the_title(); ?>
 			</a>
+			
+			<div class="pull-right">
+				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
+			</div>
 		</h1>
 		<div class="post-date">
 			<?php the_date(); ?> at <?php the_time(); ?>
@@ -14,12 +18,6 @@
 		<?php the_post_thumbnail();
 		the_content(); ?>
 	</div>
-
-	<footer>
-		<div>
-			<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
-		</div>
-	</footer>
 
 	<?php
 		get_template_part('components/categories');
