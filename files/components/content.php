@@ -18,14 +18,13 @@
 			wp_link_pages();
 		} else {
 			the_excerpt();
-		}
-
-		edit_post_link(); ?>
+		} ?>
 	</div>
 	<?php if(!is_single()) { ?>
 		<footer>
 			<div>
 				<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default', 'Comments Disabled'); ?>
+				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
 			</div>
 		</footer>
 	<?php }
