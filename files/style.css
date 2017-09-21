@@ -240,6 +240,12 @@ dd {
 .post-date {
 	border-bottom: 1px solid silver;
 	margin-bottom: 8px;
+	clear: both;
+}
+
+.post-lock-icon,
+.post-comments-link {
+	margin-right: 16px;
 }
 
 .post-lock-icon,
