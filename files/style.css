@@ -21,6 +21,16 @@ body {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+@media (min-width: 1310px) {
+	#container,
+	#title-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 h1, h2, h3, h4, h5, h6,
