@@ -301,12 +301,12 @@ dd {
 
 #comments-list .comment-author {
 	margin: -8px -8px 8px -8px;
-	padding-top: 6px;
+	padding-top: 8px;
 	border-bottom: 1px solid #ccc;
 }
 
 #comments-list .comment-author .avatar {
-	margin: -6px 8px 0 0;
+	margin: -4px 8px 4px 4px;
 }
 
 #comments-list .even .comment-author {
@@ -325,9 +325,12 @@ dd {
 	background: #eee;
 }
 
+#comments-list .comment-author .fn,
+#comments-list .comment-author .says {
+	font-size: 20px;
+}
+
 #comments-list .bypostauthor .comment-author {
-	margin: -8px -8px 8px -8px;
-	padding-top: 6px;
 	border-bottom: 1px solid #cce;
 	background: #cce;
 }
@@ -335,4 +338,8 @@ dd {
 #comments-list .comment.bypostauthor {
 	background: #eef;
 	border: 1px solid #cce;
+}
+
+#comments-list .commentmetadata {
+	margin-bottom: 8px;
 }
