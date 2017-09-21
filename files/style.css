@@ -8,7 +8,7 @@ Version: 0.0.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Text Domain: snet-theme
-Tags: 
+Tags: two-columns, left-sidebar, sticky-post, threaded-comments
 */
 
 body {
@@ -224,7 +224,7 @@ dd {
 .post-comments-link:before {
 	font-family: 'Glyphicons Halflings';
 	color: #999;
-	padding-right: 8px;
+	padding: 0 8px;
 
 	content: "\e111";
 }
