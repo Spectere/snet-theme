@@ -27,7 +27,7 @@
 	<?php if(!is_single()) { ?>
 		<footer>
 			<div>
-				<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default', 'Comments Disabled'); ?>
+				<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default post-comment-button', 'Comments Disabled'); ?>
 			</div>
 		</footer>
 	<?php }
