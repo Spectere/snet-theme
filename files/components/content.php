@@ -17,7 +17,14 @@
 			</div>
 		</h1>
 		<div class="post-date">
+			<?php if(!get_the_title()) { ?>
+				<a href="<?php the_permalink(); ?>" rel="bookmark" class="date-permalink"
+				   title="Permanent link to <?php the_title_attribute(); ?>">
+			<?php } ?>
+			
 			<?php the_time(get_option('date_format')); ?> at <?php the_time(); ?>
+
+			<?php if(!get_the_title()) echo '</a>'; ?>
 		</div>
 	</header>
 	<div class="post-content">

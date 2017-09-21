@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6,
 #subtitle-text-block {
 	font-family: Raleway, Verdana, Helvetica, sans-serif;
 	font-weight: 200;
+	word-wrap: break-word;
 }
 
 h1 {
@@ -303,9 +304,20 @@ dd {
 	margin-bottom: 12px;
 }
 
+.date-permalink,
+.date-permalink:visited {
+	color: #228;
+}
+
+.date-permalink:hover,
+.date-permalink:active {
+	color: #44a;
+}
+
 /*
  * Gallery
  */
+.format-image dl, 
 .gallery dl {
 	border: none;
 	background-color: white;
@@ -313,11 +325,13 @@ dd {
 	padding: 0;
 }
 
+.format-image dt,
 .gallery dt {
 	border: none;
 	margin: 0;
 }
 
+.format-image dd,
 .gallery dd {
 	margin: 0;
 }
