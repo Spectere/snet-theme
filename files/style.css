@@ -207,6 +207,36 @@ dd {
 	margin-bottom: 8px;
 }
 
+.post-lock-icon,
+.post-comments-link:before,
+.post-comments-link,
+.post-comments-link:active,
+.post-comments-link:hover,
+.post-comments-link:visited {
+	color: #999;
+}
+
+.post-lock-icon,
+.post-comments-link:before {
+	font-size: 50%;
+}
+
+.post-comments-link:before {
+	font-family: 'Glyphicons Halflings';
+	color: #999;
+	padding-right: 8px;
+
+	content: "\e111";
+}
+
+.post-comments-link,
+.post-comments-link:active,
+.post-comments-link:hover,
+.post-comments-link:visited {
+	color: #999;
+	text-decoration: none;
+}
+
 .category-block,
 .tag-block {
 	margin-top: 8px;

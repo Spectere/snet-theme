@@ -8,6 +8,9 @@
 			
 			<div class="pull-right">
 				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
+				<?php if(comments_open() || get_comments_number()) {
+					comments_popup_link('0', '1', '%', 'post-comments-link', '');
+				} ?>
 			</div>
 		</h1>
 		<div class="post-date">

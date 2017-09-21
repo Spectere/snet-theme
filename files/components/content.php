@@ -8,6 +8,12 @@
 
 			<div class="pull-right">
 				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
+				<?php
+				if(post_password_required()) {
+					?><span class="glyphicon glyphicon-lock post-lock-icon">&nbsp;</span><?php
+				} elseif(comments_open() || get_comments_number()) {
+					comments_popup_link('0', '1', '%', 'post-comments-link', '');
+				} ?>
 			</div>
 		</h1>
 		<div class="post-date">
@@ -24,14 +30,7 @@
 			the_excerpt();
 		} ?>
 	</div>
-	<?php if(!is_single()) { ?>
-		<footer>
-			<div>
-				<?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments', 'btn btn-default post-comment-button', 'Comments Disabled'); ?>
-			</div>
-		</footer>
-	<?php }
 
-	get_template_part('components/categories');
+	<?php get_template_part('components/categories');
 	get_template_part('components/tags'); ?>
 </article>
