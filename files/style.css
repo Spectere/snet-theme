@@ -304,6 +304,25 @@ dd {
 }
 
 /*
+ * Gallery
+ */
+.gallery dl {
+	border: none;
+	background-color: white;
+	margin: 12px 0;
+	padding: 0;
+}
+
+.gallery dt {
+	border: none;
+	margin: 0;
+}
+
+.gallery dd {
+	margin: 0;
+}
+
+/*
  * Comments
  */
 #comments-list {
