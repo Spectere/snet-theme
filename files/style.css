@@ -400,3 +400,13 @@ dd {
 #comments-list .commentmetadata {
 	margin-bottom: 8px;
 }
+
+.comment-form label {
+	min-width: 100px;
+	text-align: right;
+	margin-right: 8px;
+}
+
+.comment-form .required {
+	color: #a00;
+}

@@ -9,5 +9,7 @@
 		)); ?>
 	</ul>
 
-	<?php comment_form(); ?>
+	<div class="comment-form">
+		<?php comment_form(); ?>
+	</div>
 </div>
