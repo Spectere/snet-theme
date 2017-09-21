@@ -25,7 +25,14 @@
 
 		if(is_single()) {
 			the_content();
-			wp_link_pages();
+
+			wp_link_pages(array(
+				'before'		=> '<div class="post-pagination">',
+				'after'			=> '</div>',
+				'link_before'	=> '<span class="post-pagination-text">',
+				'link_after'	=> '</span>',
+				'separator'		=> '&middot;'
+			));
 		} else {
 			the_excerpt();
 		} ?>
