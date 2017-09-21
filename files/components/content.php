@@ -7,8 +7,8 @@
 			</a>
 
 			<div class="pull-right">
-				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger'); ?>
-				<?php
+				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-danger');
+
 				if(post_password_required()) {
 					?><span class="glyphicon glyphicon-lock post-lock-icon">&nbsp;</span><?php
 				} elseif(comments_open() || get_comments_number()) {
@@ -17,7 +17,7 @@
 			</div>
 		</h1>
 		<div class="post-date">
-			<?php the_date(); ?> at <?php the_time(); ?>
+			<?php the_time(get_option('date_format')); ?> at <?php the_time(); ?>
 		</div>
 	</header>
 	<div class="post-content">
