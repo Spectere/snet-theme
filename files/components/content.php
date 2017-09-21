@@ -34,8 +34,9 @@
 				'separator'		=> '&middot;'
 			));
 		} else {
-			the_excerpt();
-		} ?>
+			the_excerpt(); ?>
+			<div class="post-read-more"><a class="btn btn-primary" href="<?php the_permalink() ?>">View Full Post</a></div>
+		<?php } ?>
 	</div>
 
 	<?php get_template_part('components/categories');
