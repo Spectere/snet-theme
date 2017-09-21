@@ -3,14 +3,24 @@
 <div id="content-pane" class="col-sm-8 col-md-9 col-lg-9">
 	<?php while(have_posts()) {
 		the_post();
-		get_template_part('components/content');
+		get_template_part('components/content'); ?>
 
-		the_post_navigation(array(
-			'prev_text' => '&laquo; Previous Post',
-			'next_text' => 'Next Post &raquo;'
-		));
+		<nav class="post-navigation row">
+			<?php
+			$older_link = get_previous_post_link();
+			$newer_link = get_next_post_link();
+			?>
 
-		if(comments_open() || get_comments_number()) {
+			<div class="col-xs-6 text-left">
+				<?php echo $older_link; ?>
+			</div>
+
+			<div class="col-xs-6 text-right">
+				<?php echo $newer_link; ?>
+			</div>
+		</nav>
+
+		<?php if(comments_open() || get_comments_number()) {
 			comments_template();
 		}
 	} ?>

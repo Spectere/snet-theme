@@ -118,6 +118,21 @@ h1 {
 }
 
 /*
+ * Navigation
+ */
+.content-navigation,
+.post-navigation,
+.page-nativation {
+	margin: 16px 0;
+	padding: 0;
+	clear: both;
+}
+
+.content-navigation {
+	min-height: 24px;
+}
+
+/*
  * Post/Single
  */
 .nav-previous,
