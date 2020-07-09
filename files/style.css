@@ -4,7 +4,7 @@ Theme URI: https://github.com/Spectere/snet-theme
 Author: Ian Burgmyer
 Author URI: https://spectere.net/
 Description: The official theme of spectere.net!
-Version: 1.0.0
+Version: 1.1.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Text Domain: snet-theme
@@ -12,8 +12,8 @@ Tags: two-columns, left-sidebar, sticky-post, threaded-comments
 */
 
 body {
-	font-family: "Crimson Text", Cambria, serif;
-	font-size: 16px;
+	font-family: "Raleway", "Verdana", "Helvetica", sans-serif;
+	font-size: 18px;
 }
 
 #container,
@@ -37,9 +37,13 @@ h1, h2, h3, h4, h5, h6,
 .post-date,
 #title-text-block,
 #subtitle-text-block {
-	font-family: Raleway, Verdana, Helvetica, sans-serif;
-	font-weight: 200;
 	word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-date {
+	font-family: "Crimson Text", Cambria, serif;
+	font-weight: 200;
 }
 
 h1 {
@@ -172,9 +176,6 @@ h1 {
 .sticky {
 	background-color: #eef;
 	border: 1px solid #ddf;
-
-	margin-top: 16px;
-	padding: 0 16px 16px 16px;
 }
 
 .sticky .post-title:before {
@@ -209,7 +210,7 @@ dl {
 	padding: 8px 16px;
 
 	border: 1px solid #dda;
-	border-radius: 8px;
+	border-radius: 8px;.post
 }
 
 dt {
@@ -224,6 +225,12 @@ dd {
 /*
  * Posts
  */
+.post, article.page,
+.comments-container {
+	margin-top: 16px;
+	padding: 0 16px 16px 16px;
+}
+
 .post div,
 .post img,
 .post-content div,
@@ -232,10 +239,10 @@ dd {
 	height: auto
 }
 
-.post-content,
-.post-date,
-.category-block,
-.tag-block {
+div.post-content,
+div.post-date,
+div.category-block,
+div.tag-block {
 	padding: 0 4px;
 }
 
@@ -283,7 +290,7 @@ dd {
 .category-block,
 .tag-block {
 	margin-top: 8px;
-	font-size: 85%;
+	/*font-size: 85%;*/
 }
 
 .post-content p img {
@@ -357,6 +364,10 @@ dd {
 /*
  * Comments
  */
+.comments-container {
+	margin-top: 4ex;
+}
+
 #comments-list {
 	margin: 0;
 	padding: 0;
@@ -427,4 +438,13 @@ dd {
 
 .comment-form .required {
 	color: #a00;
+}
+
+/*
+ * Bootstrap overrides.
+ */
+.btn {
+	font-family: "Raleway", "Verdana", "Helvetica", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
 }

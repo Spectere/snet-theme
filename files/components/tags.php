@@ -1,5 +1,5 @@
 <?php $tags = get_the_tags();
-if(count($tags) > 0 && $tags != NULL) { ?>
+if($tags != NULL && count($tags) > 0) { ?>
 	<div class="tag-block">
 		<strong>Tags:</strong>
 		<?php foreach($tags as $tag) {
