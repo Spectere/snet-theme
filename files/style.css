@@ -4,7 +4,7 @@ Theme URI: https://github.com/Spectere/snet-theme
 Author: Ian Burgmyer
 Author URI: https://spectere.net/
 Description: The official theme of spectere.net!
-Version: 1.1.0
+Version: 1.2.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Text Domain: snet-theme
@@ -12,7 +12,7 @@ Tags: two-columns, left-sidebar, sticky-post, threaded-comments
 */
 
 body {
-	font-family: "Raleway", "Verdana", "Helvetica", sans-serif;
+	font-family: "Mukta", "Verdana", "Helvetica", sans-serif;
 	font-size: 18px;
 }
 
@@ -444,7 +444,7 @@ div.tag-block {
  * Bootstrap overrides.
  */
 .btn {
-	font-family: "Raleway", "Verdana", "Helvetica", sans-serif;
+	font-family: "Mukta", "Verdana", "Helvetica", sans-serif;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
 }

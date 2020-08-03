@@ -41,8 +41,7 @@
 				'separator'		=> '&middot;'
 			));
 		} else {
-			the_excerpt(); ?>
-			<div class="post-read-more"><a class="btn btn-primary" href="<?php the_permalink() ?>">View Full Post</a></div>
+			the_content('View Full Post', true); ?>
 		<?php } ?>
 	</div>
 

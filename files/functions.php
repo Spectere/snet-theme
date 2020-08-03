@@ -38,6 +38,11 @@
 	}
 	add_action("customize_register", "snet_customize_register");
 
+	function snet_read_more_link() {
+		return '<div class="post-read-more"><a class="btn btn-primary" href="' . get_permalink() . '">View Full Post</a></div>';
+	}
+	add_filter("the_content_more_link", "snet_read_more_link");
+
 	function snet_setup() {
 		add_theme_support("title-tag");
 		add_theme_support("automatic-feed-links");
